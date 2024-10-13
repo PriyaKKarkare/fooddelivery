@@ -25,19 +25,39 @@
     font-size: max(4.5vw, 22px);
 }
 
-.header-content p{
+.header-content p {
     color: white;
     font-size: 1vw;
 
 }
 
-.header-content button{
-    border:none;
+.header-content button {
+    border: none;
     padding: 1vw 2.3vw;
-    font-size: max(1vw,13px);
+    font-size: max(1vw, 13px);
     background-color: white;
     border-radius: 50px;
     color: #747474;
     font-weight: 500;
 
+}
+
+@media(max-width:1050px) {
+    .header-content{
+        max-width: 45%;
+    }
+
+}
+@media(max-width:750px) {
+    .header-content {
+        max-width: 45%;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+
+    }
+    
 }
