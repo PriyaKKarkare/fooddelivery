@@ -19,11 +19,7 @@ const Card = () => {
         <br />
         <hr />
         {food_list.map((item, index) => {
-          console.log("karkare======food_list", food_list);
-
           if (cardItems[item._id] > 0) {
-            console.log("karakre===========carditems", cardItems, cardItems[item._id]);
-
             return (
               <div>
                 <div className="cart-items-title cart-items-item">
