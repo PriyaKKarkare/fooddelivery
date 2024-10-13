@@ -19,7 +19,11 @@ const Card = () => {
         <br />
         <hr />
         {food_list.map((item, index) => {
+          console.log("karkare======food_list", food_list);
+
           if (cardItems[item._id] > 0) {
+            console.log("karakre===========carditems", cardItems, cardItems[item._id]);
+
             return (
               <div>
                 <div className="cart-items-title cart-items-item">
@@ -62,7 +66,7 @@ const Card = () => {
         <div className="cart-promocode">
           <div>
             <p>If you have a promo code, Enter it here</p>
-            <div className="cart-promocart-input">
+            <div className="cart-promocode-input">
               <input type="text" placeholder='promo code' />
               <button>Submit</button>
 
